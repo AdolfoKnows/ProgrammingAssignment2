@@ -1,5 +1,5 @@
-Your assignment is to write a pair of functions that cache the inverse of a matrix.
-
+#Your assignment is to write a pair of functions that cache the inverse of a matrix.
+#The makeCacheMatrix prepares the matrix x for the evalaution 
 makeCacheMatrix <- function(x){
   
   invmatrix <- NULL
@@ -13,7 +13,7 @@ makeCacheMatrix <- function(x){
   list(setmatrix=setmatrix, getmatrix=getmatrix, setinvmat=setinvmat, getinvmat=getinvmat)
   
 }
-
+#The cacheinvmat solves for the inverse a square matrix. if the matrix has already been solved, it retrieves the previous value. 
 cacheinvmat <- function(x, ...) {
   invmatrix <- x$getinvmat()
   if(!is.null(invmatrix)) {
